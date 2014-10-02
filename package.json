@@ -1,6 +1,6 @@
 {
   "name": "generator-angularjs-gulp-library",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Yeoman generator to create an AngularJS component library",
   "license": "MIT",
   "main": "app/index.js",
