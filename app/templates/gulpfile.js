@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
+    ngAnnotate = require('gulp-ng-annotate'),
     sourceFiles = [
       'src/<%= config.libraryName.camelized %>/<%= config.libraryName.camelized %>.prefix',
       'src/<%= config.libraryName.camelized %>/<%= config.libraryName.camelized %>.js',
@@ -15,6 +16,7 @@ var gulp = require('gulp'),
 gulp.task('build', function() {
   gulp.src(sourceFiles)
     .pipe(concat('<%= config.libraryName.slugified %>.js'))
+    .pipe(ngAnnotate())
     .pipe(gulp.dest('./dist/'))
     .pipe(uglify())
     .pipe(rename('<%= config.libraryName.slugified %>.min.js'))
@@ -60,4 +62,4 @@ gulp.task('test-dist-minified', function (done) {
 });
 
 gulp.task('default', ['test', 'build']);
-gulp.task('dist', ['test', 'build', 'test-dist-concatenated', 'test-dist-minified']);
+gulp.task('dist', ['test','test-dist-concatenated', 'test-dist-minified']);
