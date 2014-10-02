@@ -4,7 +4,7 @@
   "description": "Yeoman generator to create an AngularJS component library",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "jvandemo/generator-angularjs-library",
+  "repository": "https://github.com/mgonto/generator-angularjs-gulp-library",
   "authors": [{
     "name": "Jurgen Van de Moere",
     "email": "jurgen@webberid.com",

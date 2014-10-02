@@ -5,7 +5,7 @@ var yeoman = require('yeoman-generator');
 var yosay = require('yosay');
 var chalk = require('chalk');
 
-var AngularjsLibraryGenerator = yeoman.generators.Base.extend({
+var AngularjsGulpLibraryGenerator = yeoman.generators.Base.extend({
   initializing: function () {
     this.pkg = require('../package.json');
 
@@ -272,4 +272,4 @@ var AngularjsLibraryGenerator = yeoman.generators.Base.extend({
   }
 });
 
-module.exports = AngularjsLibraryGenerator;
+module.exports = AngularjsGulpLibraryGenerator;
