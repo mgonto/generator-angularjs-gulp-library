@@ -4,8 +4,6 @@
 
 [![Build Status](https://travis-ci.org/jvandemo/generator-angularjs-library.png?branch=master)](https://travis-ci.org/jvandemo/generator-angularjs-library)
 
-![Overview](http://i.imgur.com/KR6fT67.png)
-
 ## In short
 
 If you want to create a standalone library with filters, directives, services, etc for use in your AngularJS applications, then this generator may just be what you need.
@@ -30,7 +28,7 @@ $ npm install -g yo
 Install the generator:
 
 ```sh
-$ npm install -g generator-angularjs-library
+$ npm install -g generator-angularjs-gulp-library
 ```
 
 Create a new project directory:
@@ -43,7 +41,7 @@ $ cd project
 Run:
 
 ```sh
-$ yo angularjs-library
+$ yo angularjs-gulp-library
 ```
 
 Answer the questions and the generator will create the boilerplate for your library:
