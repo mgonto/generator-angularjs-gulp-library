@@ -2,7 +2,6 @@
   "node": true,
   "esnext": true,
   "bitwise": true,
-  "camelcase": true,
   "curly": true,
   "eqeqeq": true,
   "immed": true,
@@ -13,9 +12,35 @@
   "quotmark": "single",
   "regexp": true,
   "undef": true,
-  "unused": true,
-  "strict": true,
-  "trailing": true,
+  "strict": false,
   "smarttabs": true,
-  "white": true
+  "expr": true,
+
+
+  "evil": true,
+  "browser": true,
+  "regexdash": true,
+  "wsh": true,
+  "trailing": true,
+  "sub": true,
+  "unused": true,
+  "laxcomma": true,
+
+  "globals": {
+    "after": false,
+    "before": false,
+    "afterEach": false,
+    "beforeEach": false,
+    "describe": false,
+    "it": false,
+    "angular": false,
+    "expect": false,
+    "inject": false,
+    "module": false,
+    "sinon": false,
+    "browser": false,
+    "element": false,
+    "by": false,
+    "xit": false
+  }
 }
